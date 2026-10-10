@@ -1,0 +1,18 @@
+{
+  "source_file": "source-v4.png",
+  "source_scale": 1,
+  "native_size_source": true,
+  "source_size": [
+    723,
+    543
+  ],
+  "animal_scale": 1,
+  "movement": "crouch_pounce",
+  "repeat_stand": true,
+  "size_reference": "versions/gauntlet-v4-size-reference",
+  "canvas_size": 192,
+  "transformation_overrides": [
+    "idle-morph-v3-01.png",
+    "idle-morph-v4-02.png"
+  ]
+}

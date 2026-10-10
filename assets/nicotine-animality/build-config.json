@@ -1,0 +1,10 @@
+{
+  "source_scale": 0.308,
+  "movement": "flight",
+  "animal_scale": 0.833333,
+  "canvas_size": 128,
+  "transformation_overrides": [
+    "idle-morph-v3-01.png",
+    "idle-morph-v3-02.png"
+  ]
+}

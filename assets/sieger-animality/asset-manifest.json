@@ -1,0 +1,115 @@
+{
+  "character": {
+    "id": 14,
+    "slug": "sieger",
+    "name": "Neinhalt Sieger",
+    "animal": "Rhinoceros",
+    "palette": 2186752,
+    "reference_size": [
+      104,
+      133
+    ],
+    "anchor": [
+      62,
+      133
+    ],
+    "compression": 0
+  },
+  "frames": 16,
+  "cell": [
+    192,
+    192
+  ],
+  "anchor": [
+    96,
+    176
+  ],
+  "source_scale": 1,
+  "source": "native capture + image_gen source-v4.png",
+  "source_file": "source-v4.png",
+  "source_boxes": [
+    [
+      26,
+      67,
+      160,
+      168
+    ],
+    [
+      202,
+      80,
+      346,
+      171
+    ],
+    [
+      375,
+      75,
+      523,
+      171
+    ],
+    [
+      560,
+      90,
+      699,
+      171
+    ],
+    [
+      18,
+      242,
+      166,
+      330
+    ],
+    [
+      197,
+      242,
+      350,
+      331
+    ],
+    [
+      379,
+      232,
+      523,
+      316
+    ],
+    [
+      538,
+      255,
+      710,
+      333
+    ],
+    [
+      24,
+      373,
+      160,
+      488
+    ],
+    [
+      201,
+      409,
+      353,
+      488
+    ],
+    [
+      378,
+      407,
+      527,
+      492
+    ],
+    [
+      559,
+      396,
+      705,
+      488
+    ]
+  ],
+  "transformation_overrides": [
+    "idle-morph-v3-01.png",
+    "idle-morph-v4-02.png"
+  ],
+  "zooms": [
+    64,
+    80,
+    96,
+    112,
+    128
+  ]
+}

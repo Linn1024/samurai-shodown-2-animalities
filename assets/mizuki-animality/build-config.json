@@ -1,0 +1,18 @@
+{
+  "source_file": "source-v1.png",
+  "source_scale": 1,
+  "native_size_source": true,
+  "source_size": [
+    724,
+    543
+  ],
+  "animal_scale": 0.925,
+  "movement": "crouch_pounce",
+  "repeat_stand": true,
+  "size_reference": "versions/initial-size-reference",
+  "canvas_size": 192,
+  "transformation_overrides": [
+    "transform-v2-01.png",
+    "transform-v2-02.png"
+  ]
+}

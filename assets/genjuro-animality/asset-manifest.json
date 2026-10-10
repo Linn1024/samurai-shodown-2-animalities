@@ -1,0 +1,115 @@
+{
+  "character": {
+    "id": 12,
+    "slug": "genjuro",
+    "name": "Genjuro Kibagami",
+    "animal": "Leopard",
+    "palette": 2184704,
+    "reference_size": [
+      75,
+      100
+    ],
+    "anchor": [
+      27,
+      99
+    ],
+    "compression": 0
+  },
+  "frames": 16,
+  "cell": [
+    192,
+    192
+  ],
+  "anchor": [
+    96,
+    176
+  ],
+  "source_scale": 0.38571,
+  "source": "native capture + image_gen source-v1.png",
+  "source_file": "source-v1.png",
+  "source_boxes": [
+    [
+      37,
+      101,
+      335,
+      342
+    ],
+    [
+      390,
+      70,
+      696,
+      346
+    ],
+    [
+      733,
+      69,
+      1060,
+      346
+    ],
+    [
+      1083,
+      150,
+      1428,
+      342
+    ],
+    [
+      11,
+      465,
+      357,
+      675
+    ],
+    [
+      367,
+      474,
+      729,
+      672
+    ],
+    [
+      745,
+      384,
+      1072,
+      700
+    ],
+    [
+      1087,
+      435,
+      1437,
+      682
+    ],
+    [
+      32,
+      738,
+      344,
+      1012
+    ],
+    [
+      398,
+      787,
+      704,
+      1016
+    ],
+    [
+      738,
+      826,
+      1062,
+      1019
+    ],
+    [
+      1095,
+      748,
+      1422,
+      1018
+    ]
+  ],
+  "transformation_overrides": [
+    "idle-morph-v3-01.png",
+    "idle-morph-v3-02.png"
+  ],
+  "zooms": [
+    64,
+    80,
+    96,
+    112,
+    128
+  ]
+}

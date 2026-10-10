@@ -1,0 +1,115 @@
+{
+  "character": {
+    "id": 2,
+    "slug": "hanzo",
+    "name": "Hanzo Hattori",
+    "animal": "Snake",
+    "palette": 2182656,
+    "reference_size": [
+      85,
+      97
+    ],
+    "anchor": [
+      38,
+      98
+    ],
+    "compression": 0
+  },
+  "frames": 16,
+  "cell": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    112
+  ],
+  "source_scale": 1,
+  "source": "native capture + image_gen source-v1.png",
+  "source_file": "source-v1.png",
+  "source_boxes": [
+    [
+      22,
+      33,
+      171,
+      189
+    ],
+    [
+      199,
+      105,
+      341,
+      190
+    ],
+    [
+      392,
+      60,
+      510,
+      189
+    ],
+    [
+      574,
+      116,
+      689,
+      190
+    ],
+    [
+      20,
+      283,
+      183,
+      349
+    ],
+    [
+      195,
+      281,
+      352,
+      351
+    ],
+    [
+      371,
+      219,
+      535,
+      355
+    ],
+    [
+      538,
+      248,
+      706,
+      349
+    ],
+    [
+      34,
+      384,
+      155,
+      504
+    ],
+    [
+      197,
+      422,
+      349,
+      507
+    ],
+    [
+      380,
+      428,
+      525,
+      507
+    ],
+    [
+      571,
+      382,
+      689,
+      509
+    ]
+  ],
+  "zooms": [
+    64,
+    80,
+    96,
+    112,
+    128
+  ],
+  "transformation_overrides": [
+    "transform-v2-01.png",
+    "transform-v2-02.png"
+  ]
+}

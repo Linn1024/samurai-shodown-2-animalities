@@ -1,0 +1,10 @@
+*.lua text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.bld text eol=lf
+*.gd binary
+*.bin binary
+*.png binary
+*.gif binary

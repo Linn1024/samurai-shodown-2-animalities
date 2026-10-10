@@ -1,0 +1,115 @@
+{
+  "character": {
+    "id": 13,
+    "slug": "cham-cham",
+    "name": "Cham Cham",
+    "animal": "Monkey",
+    "palette": 2185728,
+    "reference_size": [
+      77,
+      78
+    ],
+    "anchor": [
+      39,
+      77
+    ],
+    "compression": 0
+  },
+  "frames": 16,
+  "cell": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    112
+  ],
+  "source_scale": 0.29333,
+  "source": "native capture + image_gen source-v1.png",
+  "source_file": "source-v1.png",
+  "source_boxes": [
+    [
+      47,
+      65,
+      316,
+      346
+    ],
+    [
+      387,
+      74,
+      696,
+      334
+    ],
+    [
+      748,
+      60,
+      1060,
+      334
+    ],
+    [
+      1102,
+      75,
+      1411,
+      333
+    ],
+    [
+      32,
+      428,
+      367,
+      664
+    ],
+    [
+      394,
+      440,
+      722,
+      673
+    ],
+    [
+      744,
+      407,
+      1045,
+      683
+    ],
+    [
+      1084,
+      415,
+      1424,
+      671
+    ],
+    [
+      25,
+      737,
+      331,
+      1006
+    ],
+    [
+      387,
+      767,
+      708,
+      1040
+    ],
+    [
+      754,
+      805,
+      1068,
+      1022
+    ],
+    [
+      1109,
+      762,
+      1419,
+      1035
+    ]
+  ],
+  "zooms": [
+    64,
+    80,
+    96,
+    112,
+    128
+  ],
+  "transformation_overrides": [
+    "transform-v2-01.png",
+    "transform-v2-02.png"
+  ]
+}

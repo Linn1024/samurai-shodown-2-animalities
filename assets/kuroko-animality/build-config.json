@@ -1,0 +1,10 @@
+{
+  "source_scale": 0.32353,
+  "movement": "flight",
+  "animal_scale": 0.734513,
+  "canvas_size": 192,
+  "transformation_overrides": [
+    "transform-v2-01.png",
+    "transform-v2-02.png"
+  ]
+}

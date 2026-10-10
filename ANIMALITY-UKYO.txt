@@ -1,0 +1,78 @@
+UKYO: SWAN ANIMALITY, first playable version
+
+Run Play-FBNeo.cmd. Load ultimate.lua in FBNeo's Lua Script window and click
+Run. The console should say "Ukyo Swan animality ready". Reload the script
+if it was already running before these files were installed.
+
+Trigger: Ukyo wins with the game's native blood-fountain fatality. Either
+player can be Ukyo. Ordinary hit blood, normal knockouts and bisections do
+not trigger it. This first version follows the game's fatality selection;
+there is no new animality input or change to its random fatality selection.
+The existing F ultimate button and steady translucent shadows are included.
+
+COSTUME PALETTES
+The human and swan automatically use Ukyo's selected costume palette for
+either player. Crest, forelock, sash and tail follow his outfit colors.
+All 19 original human colors map exactly to native palette entries; the
+additional swan shades map to the closest corresponding native shade.
+Palette selection is logged when the animality starts. Costume colors are
+read from the game's selected ROM palettes, avoiding temporary hit/POW
+flashes. Recolored frames are cached; transparency and sprite alignment
+are preserved. Reload the Lua script after installing this update.
+Preview: assets/ukyo-animality/costume-palettes-preview.png
+
+LOGGING
+Selecting animality.lua directly in FBNeo also starts ultimate.lua and all
+its features. Both entry files now show startup messages in the Lua console.
+Reload ultimate.lua to enable logging. Timestamped messages appear in the
+FBNeo Lua console and are appended to animality.log next to ultimate.lua.
+Logs include loading, each KO (with character, HP and native state), skipped
+fountain triggers with a reason, animality start, impact, victory and any
+cancellation or timeout. No messages are written on every animation frame.
+The required victim state is 0318 with HP=0 and living Ukyo as the opponent.
+
+This version needs FBNeo and the running Lua script. Its custom graphics
+are loaded by Lua; the victim's fountain and Ukyo's final victory pose are
+native game animations. HBMAME's normal Play.cmd retains F and the shadow
+fix, but does not render this FBNeo animality overlay.
+
+DESIGN
+The human at the start and end uses Ukyo's actual game sprite, extracted
+from a palette-isolated emulator capture. The swan has his cobalt-blue
+swept-back crest, hanging forelock, blue breast band, tan sword-grip accent,
+and three blue tail feathers suggesting the folds of his hakama. Its white
+feathers use Ukyo's kimono colors. The beak has a sharp blade-like silhouette.
+
+REEL (16 drawings, numbered 00-15 in the asset folder)
+00: Native Ukyo stance; 8 game frames.
+01: Ukyo folds low into feathered sleeves; 12 frames.
+02: Compact hybrid; blue hair becomes the swan's crest; 12 frames.
+03: Swan with folded wings and an S-shaped neck; 12 frames.
+04: Low launch preparation; 10 frames.
+05: Wings rise; 10 frames on launch, then reused for wingbeats.
+06: Downstroke and lift; 10 frames, then reused for wingbeats.
+07: Horizontal glide; alternates with 05/06 while approaching the victim.
+08: Beak thrust into the victim's torso; 7 frames, synchronized to the
+    native fountain emitter appearing.
+09: Neck recoils and wings rise; 9 frames.
+10: Wings brake while moving back; 9 frames.
+11: Feet lower for landing; 9 frames.
+12: Folded-wing landing hold while the native fountain finishes; 34 frames.
+13: Reverse of 02, keeping identical anatomy; 12 frames.
+14: Reverse of 01, feathers retract into Ukyo's sleeves; 12 frames.
+15: Native human stance; 8 frames, followed by native Ukyo victory state 0600.
+
+The time before impact adapts to the game's own hit-stop and fountain
+animation. The reel uses a shared palette and a fixed origin in 128x128
+cells. Mirrored versions and five camera scales are generated in advance.
+The swan rises to torso height; its ground shadow follows the movement.
+
+FILES
+ultimate.lua                   Main script to load in FBNeo.
+animality.lua                  Trigger, timing, movement and rendering.
+assets/ukyo-animality/          PNG frames, reel, GD runtime sprites, previews.
+reports/build-animality-assets.py  Rebuild packed assets using tools/Python.
+reports/test-animality*.log     Native-game integration and regression checks.
+
+The swan artwork was made with the built-in image_gen tool using the native
+Ukyo capture as reference. The exact generation prompt is stored beside it.

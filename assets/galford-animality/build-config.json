@@ -1,0 +1,14 @@
+{
+  "source_file": "source-v6.png",
+  "source_scale": 1,
+  "native_size_source": true,
+  "source_size": [
+    724,
+    543
+  ],
+  "animal_scale": 0.798165,
+  "canvas_size": 192,
+  "movement": "crouch_pounce",
+  "repeat_stand": true,
+  "size_reference": "versions/fresh-v6-size-reference"
+}

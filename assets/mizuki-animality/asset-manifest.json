@@ -1,0 +1,115 @@
+{
+  "character": {
+    "id": 16,
+    "slug": "mizuki",
+    "name": "Mizuki Rashojin",
+    "animal": "Spider",
+    "palette": 2188032,
+    "reference_size": [
+      120,
+      112
+    ],
+    "anchor": [
+      44,
+      112
+    ],
+    "compression": 0
+  },
+  "frames": 16,
+  "cell": [
+    192,
+    192
+  ],
+  "anchor": [
+    96,
+    176
+  ],
+  "source_scale": 1,
+  "source": "native capture + image_gen source-v1.png",
+  "source_file": "source-v1.png",
+  "source_boxes": [
+    [
+      27,
+      61,
+      183,
+      181
+    ],
+    [
+      208,
+      83,
+      359,
+      177
+    ],
+    [
+      378,
+      64,
+      537,
+      178
+    ],
+    [
+      558,
+      89,
+      706,
+      181
+    ],
+    [
+      24,
+      233,
+      181,
+      338
+    ],
+    [
+      200,
+      243,
+      364,
+      341
+    ],
+    [
+      378,
+      228,
+      539,
+      338
+    ],
+    [
+      544,
+      237,
+      717,
+      341
+    ],
+    [
+      25,
+      385,
+      165,
+      499
+    ],
+    [
+      202,
+      399,
+      359,
+      503
+    ],
+    [
+      376,
+      414,
+      537,
+      504
+    ],
+    [
+      554,
+      386,
+      708,
+      502
+    ]
+  ],
+  "zooms": [
+    64,
+    80,
+    96,
+    112,
+    128
+  ],
+  "transformation_overrides": [
+    "transform-v2-01.png",
+    "transform-v2-02.png"
+  ]
+}

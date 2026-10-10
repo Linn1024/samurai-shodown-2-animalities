@@ -1,0 +1,6 @@
+; Samurai Shodown II Special 2017: ground-shadow tiles, 50% opacity.
+; Used with ultimate.lua to disable the shadows' game-side blinking.
+; Complete shadow artwork: tiny airborne, normal, large and extra-large.
+; Neo Geo tile attributes add bit 16 to VRAM tile IDs 6e3e-6e4b.
+Game Samurai Shodown II Special 2017
+16e3e-16e4b 2

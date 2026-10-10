@@ -1,0 +1,274 @@
+[
+  {
+    "id": 0,
+    "slug": "haohmaru",
+    "name": "Haohmaru",
+    "animal": "Tiger",
+    "palette": 2181632,
+    "reference_size": [
+      79,
+      97
+    ],
+    "anchor": [
+      41,
+      98
+    ],
+    "compression": 0
+  },
+  {
+    "id": 1,
+    "slug": "nakoruru",
+    "name": "Nakoruru",
+    "animal": "Hawk",
+    "palette": 2180096,
+    "reference_size": [
+      75,
+      85
+    ],
+    "anchor": [
+      32,
+      85
+    ],
+    "compression": 0
+  },
+  {
+    "id": 2,
+    "slug": "hanzo",
+    "name": "Hanzo Hattori",
+    "animal": "Snake",
+    "palette": 2182656,
+    "reference_size": [
+      85,
+      97
+    ],
+    "anchor": [
+      38,
+      98
+    ],
+    "compression": 0
+  },
+  {
+    "id": 3,
+    "slug": "galford",
+    "name": "Galford",
+    "animal": "Wolf",
+    "palette": 2183168,
+    "reference_size": [
+      81,
+      109
+    ],
+    "anchor": [
+      34,
+      110
+    ],
+    "compression": 0
+  },
+  {
+    "id": 4,
+    "slug": "wan-fu",
+    "name": "Wan-Fu",
+    "animal": "Elephant",
+    "palette": 2186240,
+    "reference_size": [
+      102,
+      137
+    ],
+    "anchor": [
+      53,
+      137
+    ],
+    "compression": 0
+  },
+  {
+    "id": 5,
+    "slug": "ukyo",
+    "name": "Ukyo Tachibana",
+    "animal": "Swan",
+    "palette": 2180608,
+    "reference_size": [
+      78,
+      81
+    ],
+    "anchor": [
+      40,
+      81
+    ],
+    "compression": 0
+  },
+  {
+    "id": 6,
+    "slug": "kyoshiro",
+    "name": "Kyoshiro Senryo",
+    "animal": "Fox",
+    "palette": 2183680,
+    "reference_size": [
+      116,
+      103
+    ],
+    "anchor": [
+      36,
+      103
+    ],
+    "compression": 0
+  },
+  {
+    "id": 7,
+    "slug": "gen-an",
+    "name": "Gen-an Shiranui",
+    "animal": "Bat",
+    "palette": 2184192,
+    "reference_size": [
+      91,
+      123
+    ],
+    "anchor": [
+      39,
+      123
+    ],
+    "compression": 0
+  },
+  {
+    "id": 8,
+    "slug": "earthquake",
+    "name": "Earthquake",
+    "animal": "Boar",
+    "palette": 2182144,
+    "reference_size": [
+      174,
+      141
+    ],
+    "anchor": [
+      60,
+      142
+    ],
+    "compression": 0
+  },
+  {
+    "id": 9,
+    "slug": "jubei",
+    "name": "Jubei Yagyu",
+    "animal": "Turtle",
+    "palette": 2185216,
+    "reference_size": [
+      93,
+      107
+    ],
+    "anchor": [
+      35,
+      107
+    ],
+    "compression": 0
+  },
+  {
+    "id": 11,
+    "slug": "charlotte",
+    "name": "Charlotte",
+    "animal": "Peacock",
+    "palette": 2181120,
+    "reference_size": [
+      75,
+      107
+    ],
+    "anchor": [
+      37,
+      107
+    ],
+    "compression": 0
+  },
+  {
+    "id": 12,
+    "slug": "genjuro",
+    "name": "Genjuro Kibagami",
+    "animal": "Leopard",
+    "palette": 2184704,
+    "reference_size": [
+      79,
+      100
+    ],
+    "anchor": [
+      27,
+      99
+    ],
+    "compression": 0
+  },
+  {
+    "id": 13,
+    "slug": "cham-cham",
+    "name": "Cham Cham",
+    "animal": "Monkey",
+    "palette": 2185728,
+    "reference_size": [
+      77,
+      78
+    ],
+    "anchor": [
+      39,
+      77
+    ],
+    "compression": 0
+  },
+  {
+    "id": 14,
+    "slug": "sieger",
+    "name": "Neinhalt Sieger",
+    "animal": "Rhinoceros",
+    "palette": 2186752,
+    "reference_size": [
+      104,
+      133
+    ],
+    "anchor": [
+      62,
+      133
+    ],
+    "compression": 0
+  },
+  {
+    "id": 15,
+    "slug": "nicotine",
+    "name": "Nicotine Caffeine",
+    "animal": "Owl",
+    "palette": 2187264,
+    "reference_size": [
+      97,
+      91
+    ],
+    "anchor": [
+      38,
+      91
+    ],
+    "compression": 0
+  },
+  {
+    "id": 16,
+    "slug": "mizuki",
+    "name": "Mizuki Rashojin",
+    "animal": "Spider",
+    "palette": 2188032,
+    "reference_size": [
+      120,
+      112
+    ],
+    "anchor": [
+      44,
+      112
+    ],
+    "compression": 0
+  },
+  {
+    "id": 17,
+    "slug": "kuroko",
+    "name": "Kuroko",
+    "animal": "Raven",
+    "palette": 2187776,
+    "reference_size": [
+      63,
+      84
+    ],
+    "anchor": [
+      32,
+      84
+    ],
+    "compression": 0
+  }
+]

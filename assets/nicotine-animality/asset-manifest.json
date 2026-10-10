@@ -1,0 +1,115 @@
+{
+  "character": {
+    "id": 15,
+    "slug": "nicotine",
+    "name": "Nicotine Caffeine",
+    "animal": "Owl",
+    "palette": 2187264,
+    "reference_size": [
+      96,
+      91
+    ],
+    "anchor": [
+      38,
+      91
+    ],
+    "compression": 0
+  },
+  "frames": 16,
+  "cell": [
+    128,
+    128
+  ],
+  "anchor": [
+    64,
+    112
+  ],
+  "source_scale": 0.308,
+  "source": "native capture + image_gen source-v1.png",
+  "source_file": "source-v1.png",
+  "source_boxes": [
+    [
+      49,
+      140,
+      365,
+      365
+    ],
+    [
+      403,
+      133,
+      718,
+      367
+    ],
+    [
+      768,
+      98,
+      1041,
+      373
+    ],
+    [
+      1103,
+      180,
+      1416,
+      373
+    ],
+    [
+      31,
+      368,
+      365,
+      725
+    ],
+    [
+      395,
+      457,
+      703,
+      709
+    ],
+    [
+      725,
+      517,
+      1072,
+      676
+    ],
+    [
+      1087,
+      506,
+      1427,
+      704
+    ],
+    [
+      45,
+      768,
+      335,
+      1025
+    ],
+    [
+      355,
+      768,
+      724,
+      1045
+    ],
+    [
+      773,
+      812,
+      1077,
+      1050
+    ],
+    [
+      1106,
+      776,
+      1379,
+      1045
+    ]
+  ],
+  "transformation_overrides": [
+    "idle-morph-v3-01.png",
+    "idle-morph-v3-02.png"
+  ],
+  "zooms": [
+    64,
+    80,
+    96,
+    112,
+    128
+  ]
+}

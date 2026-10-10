@@ -1,0 +1,10 @@
+{
+  "source_scale": 0.30556,
+  "movement": "crouch_pounce",
+  "animal_scale": 1,
+  "canvas_size": 128,
+  "transformation_overrides": [
+    "transform-v2-01.png",
+    "transform-v2-02.png"
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "character": {
+    "id": 0,
+    "slug": "haohmaru",
+    "name": "Haohmaru",
+    "animal": "Tiger",
+    "palette": 2181632,
+    "reference_size": [
+      79,
+      97
+    ],
+    "anchor": [
+      41,
+      98
+    ],
+    "compression": 0
+  },
+  "frames": 16,
+  "cell": [
+    192,
+    192
+  ],
+  "anchor": [
+    96,
+    176
+  ],
+  "source_scale": 0.33,
+  "source": "native capture + image_gen source-v2.png",
+  "source_file": "source-v2.png",
+  "source_boxes": [
+    [
+      61,
+      121,
+      363,
+      379
+    ],
+    [
+      393,
+      132,
+      702,
+      376
+    ],
+    [
+      719,
+      89,
+      1051,
+      372
+    ],
+    [
+      1085,
+      159,
+      1411,
+      376
+    ],
+    [
+      49,
+      463,
+      366,
+      696
+    ],
+    [
+      374,
+      483,
+      721,
+      696
+    ],
+    [
+      724,
+      414,
+      1120,
+      681
+    ],
+    [
+      1081,
+      450,
+      1438,
+      696
+    ],
+    [
+      42,
+      772,
+      334,
+      1027
+    ],
+    [
+      381,
+      800,
+      718,
+      1027
+    ],
+    [
+      745,
+      827,
+      1060,
+      1031
+    ],
+    [
+      1083,
+      745,
+      1412,
+      1034
+    ]
+  ],
+  "transformation_overrides": [
+    "idle-morph-v3-01.png",
+    "idle-morph-v3-02.png"
+  ],
+  "zooms": [
+    64,
+    80,
+    96,
+    112,
+    128
+  ]
+}

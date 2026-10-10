@@ -1,0 +1,11 @@
+{
+  "source_scale": 0.33,
+  "source_file": "source-v2.png",
+  "movement": "crouch_pounce",
+  "animal_scale": 1,
+  "canvas_size": 192,
+  "transformation_overrides": [
+    "idle-morph-v3-01.png",
+    "idle-morph-v3-02.png"
+  ]
+}

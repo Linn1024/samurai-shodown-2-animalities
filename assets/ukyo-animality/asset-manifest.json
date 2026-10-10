@@ -1,0 +1,27 @@
+{
+  "frames": 16,
+  "cell": [
+    192,
+    192
+  ],
+  "anchor": [
+    96,
+    176
+  ],
+  "source_scale": 0.34478,
+  "native_human_frames": [
+    0,
+    15
+  ],
+  "source": "native emulator capture + built-in image_gen swan-source-v2.png",
+  "palette_colors": 24,
+  "mirror": true,
+  "zooms": [
+    64,
+    80,
+    96,
+    112,
+    128
+  ],
+  "transformation_overrides": []
+}
