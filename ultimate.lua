@@ -179,11 +179,21 @@ if not is_mame then
     if ok then ok,result=pcall(result,memory,gui) end
     if ok then
         api.animality=result
-        api.training=assert(loadfile(folder..'training.lua'))()(api,memory,joypad,input,savestate,gui)
-        emu.registerafter(function() api.training.after_frame(); result.after(); api.training.after() end)
-        gui.register(function() result.draw(); api.training.draw() end)
-        savestate.registerload(function() api.cancel(); result.cancel(false); api.training.on_load() end)
-        emu.registerstart(function() api.cancel(); result.cancel(false); api.training.on_load() end)
+        -- Optional local extension; the published mod runs without this file.
+        local extension=loadfile(folder..'training.lua')
+        if extension then api.training=extension()(api,memory,joypad,input,savestate,gui) end
+        emu.registerafter(function()
+            if api.training then api.training.after_frame() end
+            result.after()
+            if api.training then api.training.after() end
+        end)
+        gui.register(function() result.draw(); if api.training then api.training.draw() end end)
+        local function on_load()
+            api.cancel(); result.cancel(false)
+            if api.training then api.training.on_load() end
+        end
+        savestate.registerload(on_load)
+        emu.registerstart(on_load)
     else
         message('Animality unavailable: '..tostring(result))
     end

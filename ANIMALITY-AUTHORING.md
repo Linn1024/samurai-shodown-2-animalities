@@ -419,78 +419,6 @@ Keep the following together:
 
 Update the player instructions to list the new supported character. Restart the play script and confirm a real trigger before considering it complete.
 
-## Training and repeatable animality previews
-
-Training is included in the normal FBNeo `ultimate.lua` / `animality.lua` entry
-point. Restart the script after installing `training.lua`. Start a match and
-select the fighter/costume/stage you want to inspect, then use these keys:
-
-| Key | Action |
-|---|---|
-| T | Toggle training: refill both health bars, freeze the timer, passive P2 |
-| G | Preview the current P1 character's installed animality |
-| H | Preview the current P2 character's installed animality |
-| R | Restore the practice checkpoint, including during a preview |
-| J / K | Previous / next P1 character |
-| N / M | Previous / next P2 character |
-
-All 17 roster characters now have enabled animalities, including Hanzo's snake,
-Sieger's rhinoceros and Mizuki's spider. Character switching is available in a
-live match with training enabled. It wraps through the complete roster,
-including Mizuki and Kuroko. Holding a key changes the fighter once.
-
-Changing character loads the standard costume and its native animation bank,
-updates the native selection ID and palette pointers, and runs the game's
-fighter initialization handler (`252ec` -> `25314`). Old companions and
-projectiles owned by that fighter retire through the native `3052` handler;
-the other player's owned objects are preserved. The new checkpoint is saved
-after initialization completes, so R and automatic preview restores keep the
-new fighter. Changing during a preview restores/cancels it before switching.
-J/K and N/M do nothing to game RAM while training is off or in menus.
-
-Previews save the current position, enter the victim's native `0318` death state,
-and run the ordinary animality engine. The blood fountain and victory remain
-native game animations. After the human returns, the victory is shown for
-45 frames, then the checkpoint restores both fighters alive. Press G/H again
-to repeat; no attack, POW, remaining-health or random-death setup is needed.
-Training includes a 180-frame preparation delay to replace the lethal-hit stop
-that a direct preview skips. The animal transforms and holds its preparation
-pose while the native E1 death animation is paused, then E1 resumes for the
-normal takeoff and fountain timing. `training.lua` sets this with
-`preparation_frames`. This is a repeatable inspection delay; actual hit-stop
-length varies by attack. Training does not change the emulator speed setting.
-The victim's native callback is restored after every emulated frame and before
-save/load/reset cleanup.
-Animalities are available only for characters currently in `animalities.lua`.
-The screen and Lua console explain when the selected character has no asset.
-
-Checkpoints use anonymous FBNeo save objects; numbered player save slots are
-never overwritten. Each preview captures its own starting position. R can also
-restore the initial practice checkpoint before the first preview. Loading an
-external save or resetting the game invalidates the old checkpoint; a fresh one
-is captured when a live fight is available. T restores an active preview before
-turning training off. Training starts off and is FBNeo-only; F retains its normal
-POW/move requirements. Turning training off removes the passive-opponent hook.
-
-Implementation: `training.lua` is loaded by `ultimate.lua`; it shares the existing
-before/after/GUI/reset callbacks. Dummy input suppression also merges with the
-F-button macro. It checks both native fighter handlers before touching game RAM,
-so character selection and BIOS startup are left alone.
-
-Validation: `reports/training-live-verification.log` records two consecutive P1
-previews, a P2 preview, automatic restores, interruption with R and training OFF
-in actual FBNeo. `reports/training-guard-verification.log` checks disabled/menu
-guards, held-key debounce, unsupported characters, input merging, checkpoint
-reuse, external-load invalidation and hook removal. The live preview recording
-is `reports/training-preview.gif`.
-
-Full-roster validation: `reports/training-roster-live-verification.log` records
-all 17 native character changes and previews for both player slots (34 events)
-in actual FBNeo. `reports/check-training-switch.lua` verifies key debounce,
-wraparound, owned-object cleanup, menu/OFF guards, preview interruption and
-checkpoint replacement. `reports/complete-roster-verification.txt` checks every
-frame, native human pixels and 640 costume variants per character.
-
 The three new sheets use built-in imagegen, with the native character capture
 as reference. Sources and exact prompts are in `assets/hanzo-animality`,
 `assets/sieger-animality` and `assets/mizuki-animality` (`source-v1.generated.png`,
@@ -690,12 +618,7 @@ native sprite; preserve the generated frames when repairing native captures.
 Ukyo's dedicated builder reads native_anchor from build-config.json rather than
 assuming the old cropped sprite origin.
 
-## Training palettes and animal recoloring
-
-With training enabled (T), O toggles P1's main/alternate palette and P toggles
-P2's. J/K and N/M character changes preserve that choice. Reset restores the
-selected palette; changing palette during a preview first restores the practice
-position. Holding O or P toggles once per press.
+## Live animal recoloring
 
 Animals share one set of drawings across both costumes. During packing, each
 used RGB shade is mapped to the nearest nontransparent slot in the hero's native
@@ -713,17 +636,5 @@ Follow actor+0x81 for the body/skin bank (0/1/2, with the player-slot offset
 removed) and actor+0x82 for the weapon bank. Include both selectors in the cache
 signature. Reading palette RAM alone is insufficient: alternate Gen-an can have
 purple base skin while his selected full-POW skin bank is orange.
-
-## Training POW adjustment
-
-Enable training with T. Use [ / ] to decrease/increase P1 POW, or numpad - / +
-for P2. Every press moves one native level (0..32); holding starts repeating
-after 25 frames, then once per 8 frames. The HUD shows each player's raw level.
-Full POW enters through the game's native meter update, so its timer/tint and
-rage animation initialize normally. Reducing below full clears the active rage
-duration. Intermediate values are not forced to minimum or maximum each frame.
-The practice checkpoint updates after three settling frames so R and preview
-restoration keep the selection. Full POW can still expire naturally.
-See reports/training-pow-control.md for implementation and verification.
 
 Nicotine's owl also has a per-pixel hat material map. After rebuilding its frames, run `.\tools\Python\python.exe reports/build-owl-hat-palette.py` and review the generated hat preview. See [owl hat palette notes](reports/owl-hat-palette-fix.md) for the mask format and verification. This keeps straw details out of the POW skin shades.

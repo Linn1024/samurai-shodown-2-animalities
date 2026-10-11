@@ -1,6 +1,6 @@
 # Samurai Shodown II animalities
 
-FBNeo Lua mod for **Samurai Shodown II Special 2017 v1.1** (`samsh2sp`), with animalities for all 17 playable characters, a training mode, a one-button ultimate, and steady translucent shadows.
+FBNeo Lua mod for **Samurai Shodown II Special 2017 v1.1** (`samsh2sp`), with animalities for all 17 playable characters, a one-button ultimate, and steady translucent shadows.
 
 ## Play
 
@@ -10,23 +10,15 @@ FBNeo Lua mod for **Samurai Shodown II Special 2017 v1.1** (`samsh2sp`), with an
 4. Load `samsh2sp`, open FBNeo's Lua Script window, and run `ultimate.lua` from this repository. Opening `animality.lua` also launches the complete mod.
 5. For playable Kuroko and Mizuki, set **CHARACTER SELECT → ALL** in the hack's start menu.
 
-Animalities activate when a supported living winner's opponent reaches zero HP and the game's blood-fountain finish state (`0318`). They return to human form and the native victory animation. Training previews reproduce the same sequence without needing to earn the finish.
+Animalities activate when a supported living winner's opponent reaches zero HP and the game's blood-fountain finish state (`0318`). They return to human form and the native victory animation.
 
 ## Controls
 
 | Key | Action |
 | --- | --- |
 | F | P1 weapon-breaking ultimate; normal POW and move requirements apply |
-| T | Toggle training during a match |
-| G / H | Preview P1 / P2 animality |
-| R | Restore the practice position |
-| J / K | Previous / next P1 character |
-| N / M | Previous / next P2 character |
-| O / P | Toggle P1 / P2 main and alternate palettes |
-| [ / ] | Decrease / increase P1 POW by one level |
-| Numpad − / + | Decrease / increase P2 POW by one level |
 
-POW ranges from 0 to 32. Hold its controls to repeat. Character switching preserves costume selection; animals follow the displayed live palette and POW bank. Animalities appear behind native foreground props and HUD graphics, including POW signs.
+Animals follow the displayed live palette and POW bank. Animalities appear behind native foreground props and HUD graphics, including POW signs.
 
 ## Characters
 
